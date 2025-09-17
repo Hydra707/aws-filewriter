@@ -1,7 +1,7 @@
 import boto3
 from datetime import datetime
 
-def writefile(event, context):
+def lambda_handler(event, context):
     s3 = boto3.client('s3')
 
     bucket_name = "prakhar-02071998-bucket"
